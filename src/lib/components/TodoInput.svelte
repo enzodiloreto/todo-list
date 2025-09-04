@@ -1,6 +1,6 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
-	import { Plus, CheckAll } from 'lucide-svelte';
+	import { Plus, CheckCheck } from 'lucide-svelte';
 
 	export let showToggleAll = false;
 	export let allCompleted = false;
@@ -32,7 +32,7 @@
 					: 'text-gray-400 hover:text-gray-600 hover:bg-gray-100'}"
 				title={allCompleted ? 'Mark all as incomplete' : 'Mark all as complete'}
 			>
-				<CheckAll size={20} />
+				<CheckCheck size={20} />
 			</button>
 		{/if}
 
